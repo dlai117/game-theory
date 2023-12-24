@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 epsilon = 1 / 4
 omega = 1
 
-# Payoff matrix values
+# 得益矩阵
 a111, a112, a121, a122 = 50, -40, 30, -20
 d111, d112, d121, d122 = 30, 0, 10, 0
 
