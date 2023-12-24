@@ -14,7 +14,7 @@ d111, d112, d121, d122, d211, d212, d221, d222 = [30, 0, 10, 0, 40, 0, 20, 0]
 a111, a112, a121, a122, a211, a212, a221, a222 = [50, -40, 30, -20, 20, -10, 40, -30]
 
 
-# Defense strategies evolution equation
+# 防守策略演化方程
 def evolution(q, t, Omega, epsilon, p11, p21):
     dq_dt = Omega * q * (1 - q) * (
                epsilon * p11 * (d111 + d122 - d112 - d121) + (1 - epsilon) * p21 * (d211 + d222 - d212 - d221) + epsilon * (
@@ -22,10 +22,9 @@ def evolution(q, t, Omega, epsilon, p11, p21):
     return dq_dt
 
 
-# Time points
 t = np.linspace(0, 10, 100)
 
-# Plotting
+# 可视化
 plt.figure(figsize=(10, 5))
 
 for E in E_values:
